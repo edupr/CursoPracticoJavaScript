@@ -10,8 +10,10 @@ function calcularMediaAritmetica(lista) {
 }
 
 
-const lista1 = [100, 200, 500, 400000000];
+const lista1 = [6, 5, 3, 1, 10, 8];
     const mitadLista1 = parseInt(lista1.length / 2);
+    console.log("Lista 1: " + lista1);
+    console.log("Lista ordenada: ", lista1.sort(function (a, b) { return a - b; }));
 
 function esPar(numerito) {
     if (numerito % 2 === 0) {
@@ -32,8 +34,9 @@ if (esPar(lista1.length)) {
         elemento2
     ]);
     mediana = promedioElemento1y2;
+    console.log("Mediana: ", mediana);
 }
 else {
     mediana = lista1[mitadLista1];
-    console.log(mediana);
+    console.log("Mediana: ", mediana);
 };
